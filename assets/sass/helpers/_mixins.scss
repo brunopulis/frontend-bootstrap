@@ -1,0 +1,78 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// Rem output with px fallback
+@mixin rem($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin placeholder(){
+  input::-webkit-input-placeholder { @content }
+  input:-moz-placeholder           { @content }
+  input::-moz-placeholder          { @content }
+  input:-ms-input-placeholder      { @content }
+}
+
+// Breakpoints
+// ===================================================
+
+@mixin breakpoint($class) {
+  @if $class == iphone {
+    @media (max-width: 320px) { @content; }
+  }
+
+  @else if $class == xs {
+    @media (max-width: 480px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (max-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (max-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: iphone, xs, sm, md, lg";
+  }
+}
+
+
+
+// Title's 
+// =================================================== 
+
+@mixin titles() {
+  color: $white;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  @include rem(35px);
+}
