@@ -1,2 +1,3 @@
-# frontend-bootstrap
+# Frontend Bootstrap 
+
 Minimal frontend bootstrap project 
