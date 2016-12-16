@@ -1,21 +1,18 @@
 {
-  "name": "siteware",
+  "name": "project-name",
   "version": "1.0.0",
-  "description": "Site Institucional siteware",
+  "description": "Description Project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/jobspulis/siteware.git"
+    "url": "project-url"
   },
   "keywords": [
-    "siteware"
+    "keywords-project"
   ],
   "author": "Bruno Pulis <bruno.pulis@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/jobspulis/siteware#readme",
+  "homepage": "homepage-url",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
