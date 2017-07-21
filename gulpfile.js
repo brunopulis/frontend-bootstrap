@@ -17,7 +17,7 @@ var path         = require('path');
 
 
 gulp.task('sass', function() { 
-    return sass('assets/sass/siteware.scss', { style: 'compressed' }) 
+    return sass('assets/sass/app.scss', { style: 'compressed' }) 
     	.pipe(autoprefixer('last 2 version'))
          .pipe(gulp.dest('./assets/css'))
 		.pipe(rename({ suffix: '.min' }))
