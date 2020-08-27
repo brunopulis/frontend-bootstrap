@@ -15,7 +15,7 @@
   "homepage": "homepage-url",
   "devDependencies": {
     "gulp": "4.0.2",
-    "gulp-autoprefixer": "3.1.1",
+    "gulp-autoprefixer": "7.0.1",
     "gulp-bower": "0.0.15",
     "gulp-cache": "0.5.0",
     "gulp-concat": "2.6.1",
