@@ -28,6 +28,6 @@
     "gulp-sass-glob": "1.1.0",
     "gulp-uglify": "3.0.2",
     "gulp.spritesmith": "6.12.1",
-    "jshint": "2.13.0"
+    "jshint": "2.13.1"
   }
 }
